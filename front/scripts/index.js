@@ -1,5 +1,7 @@
 const filmSection = document.getElementById('films');
 
+$.get("https://students-api.2.us-1.fl0.io/movies", (data)=> data.forEach(renderFilms));
+
 function renderFilms (movie) {
     const containerMovie = document.createElement('div');
     containerMovie.classList.add('tarjeta');
@@ -20,5 +22,3 @@ function renderFilms (movie) {
     filmSection.appendChild(containerMovie);
 
 }
-
-tempData.forEach(renderFilms);
