@@ -16,7 +16,7 @@
     <header>
 
       <!-- Navbar con Bootstrap -->
-      <nav class="navbar navbar-expand-lg   bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg color-fondo fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img class="logo" src="assets/img/PopCorn.png" alt="PopCorn">
@@ -27,16 +27,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link tamanio active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/mejorespeliculas.html">Mejores películas</a>
+              <a class="nav-link tamanio" href="pages/historia.html">Historia del cine</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/quever.html">Qué ver</a>
+              <a class="nav-link tamanio" href="pages/noticias.html">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/noticias.html">Noticias</a>
+              <a class="nav-link tamanio" href="pages/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -49,35 +49,39 @@
     <main>
 
       <!-- Carrusel de películas con Bootstrap -->
-      <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/Harry Potter.png" class="d-block w-100" alt="Harry Potter and the Order of the Phoenix">
+      <section class="recontenedor">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/Harry Potter.png" class="d-block w-100" alt="Harry Potter and the Order of the Phoenix">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Piratas del Caribe.png" class="d-block w-100" alt="Pirates of the Caribbean: the Curse of the Black Pearl">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/La Milla Verde.png" class="d-block w-100" alt="Yhe Green Mile">
+            </div>
+          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-item">
-          <img src="assets/img/Piratas del Caribe.png" class="d-block w-100" alt="Pirates of the Caribbean: the Curse of the Black Pearl">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/La Milla Verde.png" class="d-block w-100" alt="Yhe Green Mile">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      </div>
-      <!-- Sección de películas -->     
-      <div class="contenedor-titulo">
+      </section>
+      <!-- Sección de películas -->
+      <section>
+        <div class="contenedor-titulo">
       <h2>Películas</h2>
-      </div>
-      <div id="films" class="contenedor-tarjetas">
+        </div>
+        <div id="films" class="contenedor-tarjetas">
         <!-- Contenedor donde se van a renderizar las tarjetas -->
-      </div>
-        
+        </div>
+      </section>
+
     </main>
 
     <!-- Footer -->
@@ -113,7 +117,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- Vinculación de Bootstrap para JS -->
-    <!-- <script src="scripts/tempData.js"></script> Vinculación de tempData (cards) desde JavaScript -->
     <script src="scripts/index.js"></script> <!-- Vinculación de index desde JavaScript -->
   </body>
 </html>

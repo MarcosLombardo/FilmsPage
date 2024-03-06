@@ -1,12 +1,45 @@
 /* Estilos generales */
 
 body {
-    background-color: rgb(116, 116, 116);
-} /* Color del fondo del header y del body */
+    background-color: #063751;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
+} /* Color del fondo del body */
+
+
+
+/* Creación de fuentes */
+
+@font-face {
+    font-family: 'Peach Cake';
+    src: url(../assets/fonts/Peach\ Cake.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(../assets/fonts/Helvetica.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url(../assets/fonts/Helvetica-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Tox Typewriter';
+    src: url(../assets/fonts/Tox\ Typewriter.ttf) format('truetype');
+}
 
 
 
 /* Navbar */
+
+.color-fondo {
+    background-color: #021118;
+} /* Color de fondo de la barra de navegación */
 
 .logo {
     max-height: auto;
@@ -14,9 +47,30 @@ body {
     margin-left: 0.2em;
 } /* Tamaño del logo PopCorn */
 
+.tamanio {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.2em;
+    color: white;
+} /* Tamaño letra de la navbar */
 
+.navbar-toggler {
+    background-color: white;
+} /* cuando la navbar comprime, el fondo del menú hamburgesa se vuelve blanco */
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #FFBE8D;
+} /* Color del active */
+
+.nav-link:hover {
+    color: #0f4968;
+}
 
 /* Carrusel */
+
+.recontenedor {
+    margin-top: 6em;
+    margin-bottom: 3em;
+} /* Contenedor de la sección carrusel */
 
 .slide {
     margin: 1em;
@@ -31,7 +85,9 @@ body {
 } /* Contenedor del título */
 
 .contenedor-titulo h2 {
-    font-size: 5vh;
+    font-family: 'Peach Cake', sans-serif;
+    font-size: 8vh;
+    color: white;
 } /* Fuente del título */
 
 .contenedor-tarjetas {
@@ -39,7 +95,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
 } /* Contenedor general de la sección de las películas */
 
 
@@ -60,59 +116,72 @@ body {
     border-radius: 10px;
     overflow: hidden;
     transition: .9s;
-} /* Contenedor de la parte frontal de la tarjeta */
+} /* Estilos del contenedor de la parte frontal de la tarjeta */
 
 .tarjeta .front {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
-}
+    box-shadow: 0 5px 10px rgb(206, 206, 206);
+} /* Estilos del contenedor de la parte frontal de la tarjeta */
 
 .tarjeta .front img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} /* Estilos del contenedor de la imagen de la tarjeta */
 
 .tarjeta .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: #08527a;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: flex-start;
     text-align: center;
-    box-shadow: 0 5px 10px #000;
-}
+    box-shadow: 0 5px 10px rgb(206, 206, 206);
+} /* Estilos para cuando la tarjeta gira */
 
 .tarjeta .back .separador {
     border-top: solid 1px #f3f3f3;
-    height: 50px;
+    height: 2px;
     line-height: 50px;
-}
-
-.tarjeta .back h3 {
-    font-size: 20px;
-    margin-top: 20px;
 }
 
 .tarjeta .back p {
     font-size: 15px;
 }
 
+.tarjeta .back h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.text-fecha {
+    font-size: 14px;
+}
+
+.maq {
+    font-family: 'Tox Typewriter', sans-serif;
+    font-size: 18px;
+}
+
 .tarjeta:hover .front {
     transform: perspective(600px) rotateY(180deg);
-}
+} /* Efecto para que la tarjeta gire de frente hacia atrás */
 
 .tarjeta:hover .back {
     transform: perspective(600px) rotateY(360deg);
-}
+} /* Efecto para que la tarjeta gire nuevamente */
+
+
 
 /* Footer */
 
 .contenedor-footer {
-    background-color: rgb(43, 43, 43);
+    background-color: #021118;
     height: 25vh;
     width: auto;
     display: flex;
@@ -120,32 +189,33 @@ body {
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-}
+} /* contenedor del footer */
 
 .marcos-dev {
     font-size: 20px;
     font-style: italic;
     color: white;
     margin: 1em;
-}
+} /* Estilos del marcos.dev */
 
 footer img {
     height: 10em;
     width: auto;
     margin: 1em;
-}
+} /* estilos para la imagen png de PopCorn */
 
 .contenedor-iconos {
     margin: 1em;
-}
+} /* Estilos del contenedor de los iconos exportados desde Bootstrap */
 
 .contenedor-iconos i {
     font-size: 30px;
     color: white;
     margin: 4px;
-}
+} /* Estilos de los iconos exportados desde Bootstrap */
+
 .contenedor-iconos a {
     text-decoration: none;
-}
+} /* sacar la decoración de los iconos exportados desde Bootstrap */
 
 

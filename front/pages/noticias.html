@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- Vinculación de jQuery -->
     <link rel="stylesheet" href="../styles/reset.css"> <!-- Vinculación de reset desde CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Vinculación de Bootstrap para CSS -->
     <link rel="stylesheet" href="../styles/style.css"> <!-- Vinculación de style desde CSS -->
@@ -15,9 +16,9 @@
     <header>
 
       <!-- Navbar con Bootstrap -->
-      <nav class="navbar navbar-expand-lg   bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../index.html">
           <img class="logo" src="../assets/img/PopCorn.png" alt="PopCorn">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +27,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link tamanio" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/mejorespeliculas.html">Mejores películas</a>
+              <a class="nav-link tamanio" href="historia.html">Historia del cine</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Qué ver</a>
+              <a class="nav-link tamanio active" href="#">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+              <a class="nav-link tamanio" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -46,7 +47,7 @@
 
     <!-- Main -->
     <main>
-   
+
     </main>
 
     <!-- Footer -->
@@ -82,7 +83,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- Vinculación de Bootstrap para JS -->
-    <script src="scripts/tempData.js"></script> <!-- Vinculación de tempData (cards) desde JavaScript -->
-    <script src="scripts/index.js"></script> <!-- Vinculación de index desde JavaScript -->
+    <script src="../scripts/index.js"></script> <!-- Vinculación de index desde JavaScript -->
   </body>
 </html>

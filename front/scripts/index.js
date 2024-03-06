@@ -10,13 +10,12 @@ function renderFilms (movie) {
                                 <img src="${movie.poster}" alt="${movie.title}">
                                 </div>
                                 <div class="face back">
-                                <h3>${movie.title} (${movie.year})</h3>
+                                <h3><strong>${movie.title}</strong> <span class="text-fecha">(${movie.year})</span></h3>
                                 <div class="separador">
                                 </div>
-                                <p>${movie.duration}</p>
-                                <p>${movie.director}</p>
-                                <p>${movie.genre}</p>
-                                <p>${movie.rate}</p>
+                                <p>${movie.duration} | ☆ ${movie.rate}</p>
+                                <p><span class="maq">Director:</span> <span class="text-fecha">${movie.director}</span></p>
+                                <p><span class="maq">Genre:</span> <span class="text-fecha">${movie.genre.join(', ')}</span></p>
                                 </div> `;
 
     filmSection.appendChild(containerMovie);
