@@ -1,6 +1,6 @@
-const filmSection = document.getElementById('films');
-
 $.get("https://students-api.2.us-1.fl0.io/movies", (data)=> data.forEach(renderFilms));
+
+const filmSection = document.getElementById('films');
 
 function renderFilms (movie) {
     const containerMovie = document.createElement('div');
