@@ -31,10 +31,6 @@ body {
     font-family: sans-serif;
 }
 
-ol, ul {
-    list-style: none;
-}
-
 blockquote, q {
     quotes: none;
 }

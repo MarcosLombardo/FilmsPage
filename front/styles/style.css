@@ -33,6 +33,26 @@ body {
     src: url(../assets/fonts/Tox\ Typewriter.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../assets/fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Italic';
+    src: url(../assets/fonts/Poppins-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Thin';
+    src: url(../assets/fonts/Poppins-Thin.ttf) format('truetype');
+}
+
 
 
 /* Navbar */
@@ -105,7 +125,7 @@ body {
     position: relative;
     width: 238px;
     height: 350px;
-    margin: 20px;
+    margin: 30px;
 } /* Contenedor de cada una de las tarjetas */
 
 .tarjeta .face {
@@ -147,26 +167,26 @@ body {
     border-top: solid 1px #f3f3f3;
     height: 2px;
     line-height: 50px;
-}
+} /* Linea que separa el titulo de lo demas en la card de atras */
 
 .tarjeta .back p {
     font-size: 15px;
-}
+} /* Tamaño por defecto de las letras de la parte de back */
 
 .tarjeta .back h3 {
     font-family: 'Helvetica', sans-serif;
     font-size: 20px;
     margin-top: 20px;
-}
+} /* Estilo para el h3 de la parte del back */
 
 .text-fecha {
     font-size: 14px;
-}
+} /* Estilo del año en la card de la parte del back */
 
 .maq {
     font-family: 'Tox Typewriter', sans-serif;
     font-size: 18px;
-}
+} /* Estilo de maquina de escribir */
 
 .tarjeta:hover .front {
     transform: perspective(600px) rotateY(180deg);
@@ -219,3 +239,314 @@ footer img {
 } /* sacar la decoración de los iconos exportados desde Bootstrap */
 
 
+
+
+
+
+
+
+/* ---------------------- Historia del cine ---------------------- */
+
+/* Imagen del cine */
+
+.hero-hist {
+    max-width: 120rem;
+    height: 40rem;
+    background: url(https://billiken.lat/wp-content/uploads/2023/05/principal2.jpeg) no-repeat center center / cover;
+    margin: 3rem auto;
+} /* Imagen de fondo superior */
+
+
+/* Historia del cine */
+
+.main-hist {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    max-width: 80rem;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+    margin-bottom: 2em;
+} /* Estilos del contenedor de la noticia */
+
+.main-hist h2 {
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+} /* Estilo del título de la noticia */
+
+.main-hist .profile-container-hist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+} /* Estilos para el contenedor de los detalles de la primer imagen de la noticia */
+
+.main-hist .profile-container-hist .profile-hist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} /* Estilos para el contenedor al lado de la imagen */
+
+.main-hist .profile-container-hist .profile-hist .img-container-hist {
+    width: 9rem;
+    height: 6rem;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Muybridge_race_horse_animated.gif/210px-Muybridge_race_horse_animated.gif)no-repeat center center / cover;
+    border-radius: 0.5rem;
+    margin-right: 1em;
+} /* Estilos para la imagen */
+
+.main-hist .profile-container-hist .profile-hist .text-hist {
+    font-family: 'Poppins Italic', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+} /* Estilos para los textos que acompañan a la imagen */
+
+.profile-hist .text-hist h3 {
+    text-transform: uppercase;
+} /* Estilo de texto h3 que acompaña a la imagen (todo en mayuscula) */
+
+.main-hist .content-hist p {
+    color: black;
+    margin: 1rem 0;
+} /* Estilos para los parrafos dentro de la historia principal */
+
+.main-hist .content-hist ul {
+    margin: 1rem 0;
+} /* Estilos para el parrafo dentro del tag */
+
+.main-hist .content-hist h4 {
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 1;
+    font-weight: 600;
+    margin-top: 1.2em;
+} /* Estilos para los h4 dentro de la historia principal */
+
+.main-hist .content-hist .content-img-container-hist {
+    width: 100%;
+    height: 35rem;
+    background: url(https://brainstormingfilms.es/wp-content/uploads/2021/12/viaje-a-la-luna-historia-del-cine-e1640366097177.jpeg) no-repeat center center / cover;
+} /* Estilos para la imagen central */
+
+.main-hist .content-hist .viaje {
+    font-family: 'Poppins Italic';
+    margin-top: 0.1rem;
+    font-size: 13px;    
+} /* Estilo del pie de foto */
+
+blockquote {
+    font-size: 0.8rem;
+    padding: 1rem 2.8rem;
+    line-height: 1.6;
+    font-weight: 300;
+    box-shadow: inset 0.5rem 0 0 #FFBE8D;
+    background-color: #f5f5f5;
+} /* Estilo de la cita */
+
+.tags-hist {
+    display: flex;
+    align-items: center;
+} /* Estilo para el tag */
+
+.tags-hist p {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 1rem 0;
+} /* Estilos para el parrafo dentro del tag */
+
+.tags-hist a {
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    color: #5b5963;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+} /* Estilos para los enlaces del tag */
+
+
+
+
+
+
+
+
+/* ---------------------- Noticias ---------------------- */
+
+/* Contenedor general de las noticias */
+
+#seccion-not {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 3rem;
+} /* Contenedor del cuerpo donde van a ir las noticias */
+
+
+
+/* Contenedor de los titulos de las noticias */
+
+.heading-not {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} /* Contenedor de los titulos */
+
+.heading-not span {
+    font-family: 'Poppins Thin', sans-serif;
+    color: white;
+} /* Estilos del primer titulo */
+
+.heading-not h3 {
+    font-family: 'Peach Cake', sans-serif;
+    font-size: 2.4rem;
+    color: white;
+} /* Estilos del segundo titulo y principal */
+
+
+
+/* Contenedor de las tarjetas de noticias */
+
+.container-not {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+} /* Estilos para el contenedor donde van a ir las tarjetas de noticias */
+
+.caja-not {
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(206, 206, 206);
+} /* Estilos de la caja contenedora de la imagen */
+
+.img-not {
+    height: 200px;
+    width: auto;
+} /* Estilos para el contenedor de la imagen de la noticia */
+
+.img-not img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+} /* Estilos de la imagen de la noticia */
+
+.text-not {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+} /* Estilos del contenedor del texto (fecha y genero de la noticia) */
+
+.text-not span {
+    font-family: 'Poppins Thin', sans-serif;
+    color: black;
+    font-size: 0.9rem;
+} /* Estilo del texte del contenedor de la noticia */
+
+.text-not .title-not {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+    text-decoration: none;
+} /* Estilo del titulo del texto */
+
+.text-not .title-not:hover {
+    color: #FFBE8D(86, 68, 68);
+    transition: all ease 0.3s;
+} /* Estilo del hover cuando se pasa por encima del titulo */
+
+.text-not p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+} /* Estilos del cuerpo de la noticia */
+
+.text-not a {
+    color: #0f0f0f;
+    text-decoration: none;
+} /* Estilo del read more */
+
+.text-not a:hover {
+    color: #FFBE8D;
+    transition: all ease 0.3s;
+} /* Estilo del efecto al pasar sobre el read more */
+
+
+
+
+
+
+
+
+/* ---------------------- Form ---------------------- */
+
+/* Contenedor general del formulario */
+
+.section-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 3rem;
+} /* Contenedor del formulario */
+
+
+
+/* Contenedor del titulo del formulario */
+
+.heading-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+} /* Contenedor de los titulos */
+
+.heading-form h3 {
+    font-family: 'Peach Cake', sans-serif;
+    font-size: 2.4rem;
+    color: white;
+} /* Estilos de titulo */
+
+
+
+/* Estilos de los campos a llenar */
+
+.container-form {
+    width: 50%;
+} /* Tamaño del formulario en proporcion a la pantalla */
+
+.text-form {
+    font-family: 'Tox Typewriter', sans-serif;
+    color: white;
+} /* Estilos del texto del formulario */
+
+
+
+/* Estilos boton */
+
+.btn-form {
+    margin-top: 1em;
+}
