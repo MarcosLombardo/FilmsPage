@@ -1,15 +1,13 @@
-/* Estilos generales */
+/* Colores */
 
-body {
-    background-color: #063751;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    );
-} /* Color del fondo del body */
-
-
+:root {
+    --color-background: #063751;
+    --color-ppal: #021118;
+    --color-text: #FFFFFF;
+    --color-textsec: #000000;
+    --color-popcorn: #FFBE8D;
+    --color-shadows: #CECECE;
+}
 
 /* Creación de fuentes */
 
@@ -53,12 +51,28 @@ body {
     src: url(../assets/fonts/Poppins-Thin.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Menlo';
+    src: url(../assets/fonts/Menlo-Regular.ttf) format('truetype');
+}
 
+
+
+/* Estilos generales */
+
+body {
+    background-color: var(--color-background);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
+} /* Color del fondo del body */
 
 /* Navbar */
 
 .color-fondo {
-    background-color: #021118;
+    background-color: var(--color-ppal);
 } /* Color de fondo de la barra de navegación */
 
 .logo {
@@ -70,15 +84,15 @@ body {
 .tamanio {
     font-family: 'Helvetica Bold', sans-serif;
     font-size: 1.2em;
-    color: white;
+    color: var(--color-text);
 } /* Tamaño letra de la navbar */
 
 .navbar-toggler {
-    background-color: white;
+    background-color: var(--color-text);
 } /* cuando la navbar comprime, el fondo del menú hamburgesa se vuelve blanco */
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #FFBE8D;
+    color: var(--color-popcorn);
 } /* Color del active */
 
 .nav-link:hover {
@@ -107,7 +121,7 @@ body {
 .contenedor-titulo h2 {
     font-family: 'Peach Cake', sans-serif;
     font-size: 8vh;
-    color: white;
+    color: var(--color-text);
 } /* Fuente del título */
 
 .contenedor-tarjetas {
@@ -140,7 +154,7 @@ body {
 
 .tarjeta .front {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px rgb(206, 206, 206);
+    box-shadow: 0 5px 10px var(--color-shadows);
 } /* Estilos del contenedor de la parte frontal de la tarjeta */
 
 .tarjeta .front img {
@@ -151,42 +165,71 @@ body {
 } /* Estilos del contenedor de la imagen de la tarjeta */
 
 .tarjeta .back {
+    font-family: 'Tox Typewriter', sans-serif;
     transform: perspective(600px) rotateY(180deg);
-    background: #08527a;
-    padding: 15px;
-    color: #f3f3f3;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    );
+    padding: 13px;
+    color: var(--color-text);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-content: flex-start;
     text-align: center;
-    box-shadow: 0 5px 10px rgb(206, 206, 206);
+    box-shadow: 0 5px 10px var(--color-shadows);
 } /* Estilos para cuando la tarjeta gira */
 
 .tarjeta .back .separador {
-    border-top: solid 1px #f3f3f3;
+    border-top: solid 1px var(--color-text);
     height: 2px;
     line-height: 50px;
 } /* Linea que separa el titulo de lo demas en la card de atras */
 
-.tarjeta .back p {
-    font-size: 15px;
-} /* Tamaño por defecto de las letras de la parte de back */
-
 .tarjeta .back h3 {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 1px;
 } /* Estilo para el h3 de la parte del back */
 
-.text-fecha {
-    font-size: 14px;
+.text-year {
+    font-size: 15px;
+    font-style: italic;
 } /* Estilo del año en la card de la parte del back */
 
-.maq {
-    font-family: 'Tox Typewriter', sans-serif;
+.text-duration {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.text-rate {
+    font-size: 14px;
+}
+
+.star {
+    color: yellow;
+    font-size: 14px;
+    text-decoration: solid;
+}
+
+.text-director {
     font-size: 18px;
-} /* Estilo de maquina de escribir */
+    text-decoration: underline;
+}
+
+.text-director-name {
+    font-size: 15px;
+}
+
+.text-genre {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.text-genres {
+    font-size: 15px;
+}
 
 .tarjeta:hover .front {
     transform: perspective(600px) rotateY(180deg);
@@ -201,7 +244,7 @@ body {
 /* Footer */
 
 .contenedor-footer {
-    background-color: #021118;
+    background-color: var(--color-ppal);
     height: 25vh;
     width: auto;
     display: flex;
@@ -212,10 +255,11 @@ body {
 } /* contenedor del footer */
 
 .marcos-dev {
+    font-family: 'Menlo', sans-serif;
     font-size: 20px;
-    font-style: italic;
-    color: white;
+    color: var(--color-text);
     margin: 1em;
+    margin-bottom: 0;
 } /* Estilos del marcos.dev */
 
 footer img {
@@ -230,8 +274,8 @@ footer img {
 
 .contenedor-iconos i {
     font-size: 30px;
-    color: white;
-    margin: 4px;
+    color: var(--color-text);
+    margin: 6px;
 } /* Estilos de los iconos exportados desde Bootstrap */
 
 .contenedor-iconos a {
@@ -344,7 +388,7 @@ blockquote {
     padding: 1rem 2.8rem;
     line-height: 1.6;
     font-weight: 300;
-    box-shadow: inset 0.5rem 0 0 #FFBE8D;
+    box-shadow: inset 0.5rem 0 0 var(--color-popcorn);
     background-color: #f5f5f5;
 } /* Estilo de la cita */
 
@@ -364,7 +408,7 @@ blockquote {
     padding: 0.3rem 0.5rem;
     background-color: #f5f5f5;
     border-radius: 15px;
-    color: #5b5963;
+    color: grey;
     font-size: 0.8rem;
     text-transform: capitalize;
     margin: 0 0.5rem;
@@ -403,13 +447,13 @@ blockquote {
 
 .heading-not span {
     font-family: 'Poppins Thin', sans-serif;
-    color: white;
+    color: var(--color-text);
 } /* Estilos del primer titulo */
 
 .heading-not h3 {
     font-family: 'Peach Cake', sans-serif;
     font-size: 2.4rem;
-    color: white;
+    color: var(--color-text);
 } /* Estilos del segundo titulo y principal */
 
 
@@ -426,11 +470,11 @@ blockquote {
 
 .caja-not {
     width: 350px;
-    background-color: #ffffff;
-    border: 1px solid #ececec;
+    background-color: var(--color-text);
+    border: 1px solid var(--color-shadows);
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(206, 206, 206);
+    box-shadow: 0 5px 10px var(--color-shadows);
 } /* Estilos de la caja contenedora de la imagen */
 
 .img-not {
@@ -454,42 +498,37 @@ blockquote {
 
 .text-not span {
     font-family: 'Poppins Thin', sans-serif;
-    color: black;
+    color: grey;
     font-size: 0.9rem;
 } /* Estilo del texte del contenedor de la noticia */
 
 .text-not .title-not {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #272727;
+    color: var(--color-textsec);
     text-decoration: none;
-} /* Estilo del titulo del texto */
-
-.text-not .title-not:hover {
-    color: #FFBE8D(86, 68, 68);
-    transition: all ease 0.3s;
-} /* Estilo del hover cuando se pasa por encima del titulo */
-
-.text-not p {
-    color: #9b9b9b;
-    font-size: 0.9rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+} /* Estilo del titulo del texto */
+
+.text-not .title-not:hover {
+    color: var(--color-popcorn);
+    transition: all ease 0.3s;
+} /* Estilo del hover cuando se pasa por encima del titulo */
+
+.text-not p {
+    color: grey;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 20px 0px;
 } /* Estilos del cuerpo de la noticia */
-
-.text-not a {
-    color: #0f0f0f;
-    text-decoration: none;
-} /* Estilo del read more */
-
-.text-not a:hover {
-    color: #FFBE8D;
-    transition: all ease 0.3s;
-} /* Estilo del efecto al pasar sobre el read more */
 
 
 
@@ -502,51 +541,185 @@ blockquote {
 
 /* Contenedor general del formulario */
 
-.section-form {
+.container-pel {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
-    padding: 40px;
-    margin-top: 3rem;
-} /* Contenedor del formulario */
-
-
-
-/* Contenedor del titulo del formulario */
-
-.heading-form {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 0.5em;
-    margin-bottom: 2em;
-} /* Contenedor de los titulos */
+    padding: 50px;
+    margin-top: 4rem;
+} /* Contenedor general de la seccion */
 
-.heading-form h3 {
+.heading-pel h3 {
     font-family: 'Peach Cake', sans-serif;
     font-size: 2.4rem;
-    color: white;
-} /* Estilos de titulo */
+    color: var(--color-text);
+} /* Estilo para el título general de la seccion */
 
 
 
-/* Estilos de los campos a llenar */
+/* Contenedor imagen y formulario */
 
-.container-form {
-    width: 50%;
-} /* Tamaño del formulario en proporcion a la pantalla */
+.container-imgform-pel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    max-width: 100%;
+    height: 700px;
+    margin: 20px;
+}
 
-.text-form {
-    font-family: 'Tox Typewriter', sans-serif;
-    color: white;
-} /* Estilos del texto del formulario */
+
+
+/* Contenedor imagen */
+
+.container-img-pel {
+    position: relative;
+    background: url('https://i.pinimg.com/564x/2d/5a/53/2d5a533fd5254d3d4320db86d98de2d8.jpg') no-repeat center center / cover;
+    width: 40%;
+} /* Imagen de Roz */
+
+.container-img-pel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+} /* Sombreado a las imagenes originales */
 
 
 
-/* Estilos boton */
+/* Contenedor formulario */
 
-.btn-form {
+.container-titleformbtn-pel {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+} /* Contenedor formulario, contiene el h4 y el formulario */
+
+.container-title-pel h4{
+    font-family: 'Poppins Bold', sans-serif;
+    color: var(--color-text);
+    font-size: 2rem;
+    text-align: center;
     margin-top: 1em;
+} /* Estilos del titulo 'Crea tu pelicula' */
+
+.container-formbtn-pel {
+    height: 100%;
+    margin: 1rem;
+    align-content: center;
+} /* Contenedor general del formulario */
+
+/* Inputs y Labels */
+
+.container-labelinput-pel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+} /* Contenedores de los labels y los imputs */
+
+.container-labelinput-pel-tit, .container-labelinput-pel-dir,
+.container-labelinput-pel-year, .container-labelinput-pel-dur,
+.container-labelinput-pel-gen, .container-labelinput-pel-rank,
+.container-labelinput-pel-img {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+} /* Estilos de los label e imputs generales */
+
+.label-tit, .label-dir, .label-year,
+.label-dur, .label-gen, .label-rank, .label-img {
+    color: var(--color-text);
+    font-size: 1.3em;
+    margin-right: 1em;
+} /* Estilos de los labels particulares */
+
+.inp-tit, .inp-dir, .inp-year,
+.inp-dur, .inp-gen, .inp-rank, .inp-img {
+        display: flex;
+        width: 100%;
+        padding: .375rem .75rem;
+        color: var(--color-textsec);
+        border: var(--bs-border-width) solid var(--bs-border-color);
+        border-radius: var(--bs-border-radius);
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        box-shadow: 2px 1px 10px var(--color-shadows);
+
+} /* Estilo de los inputs particulares */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} /* Sacar las flechitas en los inputs de los numbers */
+
+
+
+/* Seccion botones */
+
+.container-btn-pel {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 60px;
+    margin: 3em;
+}
+
+.btn-pel {
+    padding: 0.8em;
+    border: none;
+    border-radius: 5rem;
+    min-width: 7rem;
+    background-color: var(--color-text);
+    box-shadow: 2px 1px 10px var(--color-shadows);
+}
+
+.btn-pel:hover {
+    background-color: var(--color-ppal);
+    color: var(--color-text);
+    text-transform: capitalize;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .container-pel {
+        margin-bottom: 12em;
+    }
+
+    .container-img-pel {
+        background: url('https://scontent.fros2-2.fna.fbcdn.net/v/t1.18169-9/24882_390012054077_5795267_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=oL4JJiUXgC8AX8MDML_&_nc_ht=scontent.fros2-2.fna&oh=00_AfAdu-dRM7AtWjoLXAkCROCOGvdvpeuMnA7fCSvUWp3r4Q&oe=661324CD') no-repeat center center / cover;
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .container-title-pel h4 {
+        margin-top: 1em;
+    }
+
+    .container-titleformbtn-pel {
+        width: 100%;
+    }
+
+
+
+    .container-btn-pel {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-pel {
+        margin-bottom: 22em;
+    }
+
+    .container-labelinput-pel {
+        display: grid;
+    }
+
 }

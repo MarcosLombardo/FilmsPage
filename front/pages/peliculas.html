@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/style.css"> <!-- Vinculación de style desde CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Vinculación iconos desde Bootstrap -->
     <title>PopCorn</title>
+    <link rel="icon" type="image/png" href="../assets/img/PopCorn-icon.png">
   </head>
   <body>
     
@@ -36,7 +37,7 @@
               <a class="nav-link tamanio" href="noticias.html">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link tamanio active" href="#">Contacto</a>
+              <a class="nav-link tamanio active" href="#">Mis películas</a>
             </li>
           </ul>
         </div>
@@ -48,42 +49,76 @@
     <!-- Main -->
     <main>
 
-      <!-- Formulario hecho todo con Bootstrap -->
-      <section class="section-form">
+      <!-- Seccion general de la parte de mi pelicula-->
+      <section class="container-pel">
 
-        <!-- Seccion titulo -->
-        <div class="heading-form">
+        <!-- Titulo general-->
+        <div class="heading-pel">
           <h3>Formulario cinéfilo</h3>
         </div>
 
-        <!-- input nombre -->
-        <div class="mb-3 container-form">
-          <label for="exampleFormControlInput1" class="form-label text-form">Nombre:</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <!-- input apellido -->
-        <div class="mb-3 container-form">
-          <label for="exampleFormControlInput1" class="form-label text-form">Apellido:</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <!-- input edad -->
-        <div class="mb-3 container-form">
-          <label for="exampleFormControlInput1" class="form-label text-form">Edad:</label>
-          <input type="number" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <!-- input película fav -->
-        <div class="mb-3 container-form">
-          <label for="exampleFormControlInput1" class="form-label text-form">Película preferida:</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <!-- input critica -->
-        <div class="mb-3 container-form">
-          <label for="exampleFormControlTextarea1" class="form-label text-form">Crítica (siempre constructiva):</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+        <!-- Seccion formulario general (img y form)-->
+        <div class="container-imgform-pel">
+          <!-- contenedor IMG -->
+          <div class="container-img-pel">
+          </div>
+          <div class="container-titleformbtn-pel">
+            <!-- contenedor form -->
+            <div class="container-title-pel">
+              <!-- Titulo -->
+              <h4>Crea tu película</h4>
+            </div>
+            <form class="container-formbtn-pel">
 
-        <!-- Seccion boton -->
-        <button type="button" class="btn btn-outline-light btn-form">Submit</button>
+              <!-- Form -->
+              <div class="container-labelinput-pel">
+                <div class="container-labelinput-pel-tit col-md-12">  <!-- Titulo -->
+                  <label class="label-tit">Title <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-tit">
+                </div>
+              </div>
+              <div class="container-labelinput-pel">
+                <div class="container-labelinput-pel-dir col-md-12"> <!-- director -->
+                  <label class="label-dir">Director <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-dir">
+                </div>
+              </div>
+              <div class="container-labelinput-pel">
+                <div class="container-labelinput-pel-year col-md-4"> <!-- Año -->
+                  <label class="label-year">Year <span class="text-danger">*</span></label>
+                  <input type="number" class="inp-year">
+                </div>
+                <div class="container-labelinput-pel-dur col-md-4"><!-- Duracion -->
+                  <label class="label-dur">Duration <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-dur">
+                </div>
+                <div class="container-labelinput-pel-rank col-md-4"> <!-- rank -->
+                  <label class="label-rank">Rate <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-rank">
+                </div>
+              </div>
+              <div class="container-labelinput-pel">
+                <div class="container-labelinput-pel-gen col-md-12"> <!-- genero -->
+                  <label class="label-gen">Genre <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-gen">
+                </div>
+              </div>
+              <div class="container-labelinput-pel">
+                <div class="container-labelinput-pel-img col-md-12"> <!-- img -->
+                  <label class="label-img">Poster <span class="text-danger">*</span></label>
+                  <input type="url" class="inp-img">
+                </div>
+              </div>
+              
+              <!-- Botones -->
+              <div class="container-btn-pel">
+                <button class="btn-pel">Create</button>
+                <button class="btn-pel">Clean</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
 
       </section>
 
