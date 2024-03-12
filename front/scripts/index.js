@@ -8,7 +8,8 @@ const axios = require('axios');
 
 /* --------------------------------------------- Renderizar la API con una promesa --------------------------------------------- */
 
-// const promise = axios.get("https://students-api.2.us-1.fl0.io/movies");
+
+// const promise = axios.get("https://students-api.up.railway.app/movies");
 
 // promise
 //     .then((res) => {
@@ -17,8 +18,8 @@ const axios = require('axios');
 //             renderFilms(movie);
 //         });
 //     })
-//     .catch((err) => {
-//         console.error("No se encuentra la API");
+//     .catch((error) => {
+//         console.log(error.message);
 //     });
 
 /* --------------------------------------------- Renderizar la API con async/await --------------------------------------------- */
@@ -26,13 +27,10 @@ const axios = require('axios');
 
 const fetchMovies = async () => {
     try {
-        const data = await axios.get("https://students-api.2.us-1.fl0.io/movies");
-        const movies = res.data;
-            movies.forEach(movie => {
-            renderFilms(movie);
-        });
-    } catch (err) {
-        console.error("No se encuentra la API");
+        const { data } = await axios.get("https://students-api.up.railway.app/movies");
+        data.forEach(renderFilms);
+    } catch (error) {
+        console.log(error.message);
     }   
 }
 

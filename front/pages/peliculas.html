@@ -73,47 +73,47 @@
               <!-- Form -->
               <div class="container-labelinput-pel">
                 <div class="container-labelinput-pel-tit col-md-12">  <!-- Titulo -->
-                  <label class="label-tit">Title <span class="text-danger">*</span></label>
-                  <input type="text" class="inp-tit">
+                  <label for="titulo" class="label-tit">Title <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-tit" id="title" name="titulo" required>
                 </div>
               </div>
               <div class="container-labelinput-pel">
                 <div class="container-labelinput-pel-dir col-md-12"> <!-- director -->
-                  <label class="label-dir">Director <span class="text-danger">*</span></label>
-                  <input type="text" class="inp-dir">
+                  <label for="director" class="label-dir">Director <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-dir" id="director" name="director" required>
                 </div>
               </div>
               <div class="container-labelinput-pel">
                 <div class="container-labelinput-pel-year col-md-4"> <!-- Año -->
-                  <label class="label-year">Year <span class="text-danger">*</span></label>
-                  <input type="number" class="inp-year">
+                  <label for="anio" class="label-year">Year <span class="text-danger">*</span></label>
+                  <input type="number" class="inp-year" id="year" name="anio" required>
                 </div>
                 <div class="container-labelinput-pel-dur col-md-4"><!-- Duracion -->
-                  <label class="label-dur">Duration <span class="text-danger">*</span></label>
-                  <input type="text" class="inp-dur">
+                  <label for="duracion" class="label-dur">Duration <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-dur" id="duration" name="duracion" required>
                 </div>
                 <div class="container-labelinput-pel-rank col-md-4"> <!-- rank -->
-                  <label class="label-rank">Rate <span class="text-danger">*</span></label>
-                  <input type="text" class="inp-rank">
+                  <label for="ranking" class="label-rank">Rate <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-rank" id="rate" name="ranking" required>
                 </div>
               </div>
               <div class="container-labelinput-pel">
                 <div class="container-labelinput-pel-gen col-md-12"> <!-- genero -->
-                  <label class="label-gen">Genre <span class="text-danger">*</span></label>
-                  <input type="text" class="inp-gen">
+                  <label for="genero" class="label-gen">Genre <span class="text-danger">*</span></label>
+                  <input type="text" class="inp-gen" id="genre" name="genero" required>
                 </div>
               </div>
               <div class="container-labelinput-pel">
                 <div class="container-labelinput-pel-img col-md-12"> <!-- img -->
-                  <label class="label-img">Poster <span class="text-danger">*</span></label>
-                  <input type="url" class="inp-img">
+                  <label for="imagen" class="label-img">Poster <span class="text-danger">*</span></label>
+                  <input type="url" class="inp-img" id="poster" name="imagen" required>
                 </div>
               </div>
               
               <!-- Botones -->
               <div class="container-btn-pel">
-                <button class="btn-pel">Create</button>
-                <button class="btn-pel">Clean</button>
+                <button id="presionarCreate" type="submit" class="btn-pel">Create</button>
+                <button id="presionarClean" type="submit" class="btn-pel">Clean</button>
               </div>
 
             </form>
@@ -138,16 +138,16 @@
           </div>
 
           <div class="contenedor-iconos">
-            <a href="https://www.instagram.com">
+            <a href="https://www.instagram.com" target="_blank">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com" target="_blank">
               <i class="bi bi-facebook"></i>
             </a>
-            <a href="https://www.twitter.com">
+            <a href="https://www.twitter.com" target="_blank">
               <i class="bi bi-twitter-x"></i>
             </a>
-            <a href="https://www.tiktok.com">
+            <a href="https://www.tiktok.com" target="_blank">
               <i class="bi bi-tiktok"></i>
             </a>
           </div>

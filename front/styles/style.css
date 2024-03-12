@@ -99,11 +99,12 @@ body {
     color: #0f4968;
 }
 
+
+
 /* Carrusel */
 
 .recontenedor {
     margin-top: 6em;
-    margin-bottom: 3em;
 } /* Contenedor de la sección carrusel */
 
 .slide {
@@ -120,7 +121,7 @@ body {
 
 .contenedor-titulo h2 {
     font-family: 'Peach Cake', sans-serif;
-    font-size: 8vh;
+    font-size: 6vh;
     color: var(--color-text);
 } /* Fuente del título */
 
@@ -245,7 +246,6 @@ body {
 
 .contenedor-footer {
     background-color: var(--color-ppal);
-    height: 25vh;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -282,6 +282,9 @@ footer img {
     text-decoration: none;
 } /* sacar la decoración de los iconos exportados desde Bootstrap */
 
+i:hover {
+    color: var(--color-popcorn);
+}
 
 
 
@@ -443,6 +446,7 @@ blockquote {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
 } /* Contenedor de los titulos */
 
 .heading-not span {
@@ -452,7 +456,7 @@ blockquote {
 
 .heading-not h3 {
     font-family: 'Peach Cake', sans-serif;
-    font-size: 2.4rem;
+    font-size: 6vh;
     color: var(--color-text);
 } /* Estilos del segundo titulo y principal */
 
@@ -545,13 +549,13 @@ blockquote {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 60px;
     margin-top: 4rem;
 } /* Contenedor general de la seccion */
 
 .heading-pel h3 {
     font-family: 'Peach Cake', sans-serif;
-    font-size: 2.4rem;
+    font-size: 6vh;
     color: var(--color-text);
 } /* Estilo para el título general de la seccion */
 
