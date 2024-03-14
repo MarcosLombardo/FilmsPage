@@ -3,60 +3,58 @@
 :root {
     --color-background: #063751;
     --color-ppal: #021118;
-    --color-text: #FFFFFF;
+    --color-text: #ffffff;
     --color-textsec: #000000;
-    --color-popcorn: #FFBE8D;
-    --color-shadows: #CECECE;
+    --color-popcorn: #ffbe8d;
+    --color-shadows: #cecece;
 }
 
 /* Creación de fuentes */
 
 @font-face {
-    font-family: 'Peach Cake';
-    src: url(../assets/fonts/Peach\ Cake.otf) format('truetype');
+    font-family: "Peach Cake";
+    src: url(../assets/fonts/Peach\ Cake.otf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Helvetica';
-    src: url(../assets/fonts/Helvetica.ttf) format('truetype');
+    font-family: "Helvetica";
+    src: url(../assets/fonts/Helvetica.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Helvetica Bold';
-    src: url(../assets/fonts/Helvetica-Bold.ttf) format('truetype');
+    font-family: "Helvetica Bold";
+    src: url(../assets/fonts/Helvetica-Bold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Tox Typewriter';
-    src: url(../assets/fonts/Tox\ Typewriter.ttf) format('truetype');
+    font-family: "Tox Typewriter";
+    src: url(../assets/fonts/Tox\ Typewriter.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url(../assets/fonts/Poppins-Regular.ttf) format('truetype');
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Poppins Bold';
-    src: url(../assets/fonts/Poppins-Bold.ttf) format('truetype');
+    font-family: "Poppins Bold";
+    src: url(../assets/fonts/Poppins-Bold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Poppins Italic';
-    src: url(../assets/fonts/Poppins-Italic.ttf) format('truetype');
+    font-family: "Poppins Italic";
+    src: url(../assets/fonts/Poppins-Italic.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Poppins Thin';
-    src: url(../assets/fonts/Poppins-Thin.ttf) format('truetype');
+    font-family: "Poppins Thin";
+    src: url(../assets/fonts/Poppins-Thin.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Menlo';
-    src: url(../assets/fonts/Menlo-Regular.ttf) format('truetype');
+    font-family: "Menlo";
+    src: url(../assets/fonts/Menlo-Regular.ttf) format("truetype");
 }
-
-
 
 /* Estilos generales */
 
@@ -64,8 +62,8 @@ body {
     background-color: var(--color-background);
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
     );
 } /* Color del fondo del body */
 
@@ -82,7 +80,7 @@ body {
 } /* Tamaño del logo PopCorn */
 
 .tamanio {
-    font-family: 'Helvetica Bold', sans-serif;
+    font-family: "Helvetica Bold", sans-serif;
     font-size: 1.2em;
     color: var(--color-text);
 } /* Tamaño letra de la navbar */
@@ -91,15 +89,14 @@ body {
     background-color: var(--color-text);
 } /* cuando la navbar comprime, el fondo del menú hamburgesa se vuelve blanco */
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--color-popcorn);
 } /* Color del active */
 
 .nav-link:hover {
     color: #0f4968;
 }
-
-
 
 /* Carrusel */
 
@@ -111,8 +108,6 @@ body {
     margin: 1em;
 } /* Márgenes del carrusel con respecto a la pantalla */
 
-
-
 /* Peliculas */
 
 .contenedor-titulo {
@@ -120,7 +115,7 @@ body {
 } /* Contenedor del título */
 
 .contenedor-titulo h2 {
-    font-family: 'Peach Cake', sans-serif;
+    font-family: "Peach Cake", sans-serif;
     font-size: 6vh;
     color: var(--color-text);
 } /* Fuente del título */
@@ -132,7 +127,6 @@ body {
     justify-content: center;
     min-height: 50vh;
 } /* Contenedor general de la sección de las películas */
-
 
 /* Tarjetas */
 
@@ -150,7 +144,7 @@ body {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .9s;
+    transition: 0.9s;
 } /* Estilos del contenedor de la parte frontal de la tarjeta */
 
 .tarjeta .front {
@@ -166,13 +160,9 @@ body {
 } /* Estilos del contenedor de la imagen de la tarjeta */
 
 .tarjeta .back {
-    font-family: 'Tox Typewriter', sans-serif;
+    font-family: "Tox Typewriter", sans-serif;
     transform: perspective(600px) rotateY(180deg);
-    background: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    );
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     padding: 13px;
     color: var(--color-text);
     display: flex;
@@ -240,8 +230,6 @@ body {
     transform: perspective(600px) rotateY(360deg);
 } /* Efecto para que la tarjeta gire nuevamente */
 
-
-
 /* Footer */
 
 .contenedor-footer {
@@ -255,7 +243,7 @@ body {
 } /* contenedor del footer */
 
 .marcos-dev {
-    font-family: 'Menlo', sans-serif;
+    font-family: "Menlo", sans-serif;
     font-size: 20px;
     color: var(--color-text);
     margin: 1em;
@@ -286,12 +274,6 @@ i:hover {
     color: var(--color-popcorn);
 }
 
-
-
-
-
-
-
 /* ---------------------- Historia del cine ---------------------- */
 
 /* Imagen del cine */
@@ -299,15 +281,15 @@ i:hover {
 .hero-hist {
     max-width: 120rem;
     height: 40rem;
-    background: url(https://billiken.lat/wp-content/uploads/2023/05/principal2.jpeg) no-repeat center center / cover;
+    background: url(https://billiken.lat/wp-content/uploads/2023/05/principal2.jpeg)
+        no-repeat center center / cover;
     margin: 3rem auto;
 } /* Imagen de fondo superior */
-
 
 /* Historia del cine */
 
 .main-hist {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 80%;
     max-width: 80rem;
     background-color: aliceblue;
@@ -319,7 +301,7 @@ i:hover {
 } /* Estilos del contenedor de la noticia */
 
 .main-hist h2 {
-    font-family: 'Poppins Bold', sans-serif;
+    font-family: "Poppins Bold", sans-serif;
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -342,13 +324,14 @@ i:hover {
 .main-hist .profile-container-hist .profile-hist .img-container-hist {
     width: 9rem;
     height: 6rem;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Muybridge_race_horse_animated.gif/210px-Muybridge_race_horse_animated.gif)no-repeat center center / cover;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Muybridge_race_horse_animated.gif/210px-Muybridge_race_horse_animated.gif)
+        no-repeat center center / cover;
     border-radius: 0.5rem;
     margin-right: 1em;
 } /* Estilos para la imagen */
 
 .main-hist .profile-container-hist .profile-hist .text-hist {
-    font-family: 'Poppins Italic', sans-serif;
+    font-family: "Poppins Italic", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -368,7 +351,7 @@ i:hover {
 } /* Estilos para el parrafo dentro del tag */
 
 .main-hist .content-hist h4 {
-    font-family: 'Poppins Bold', sans-serif;
+    font-family: "Poppins Bold", sans-serif;
     font-size: 1;
     font-weight: 600;
     margin-top: 1.2em;
@@ -377,13 +360,14 @@ i:hover {
 .main-hist .content-hist .content-img-container-hist {
     width: 100%;
     height: 35rem;
-    background: url(https://brainstormingfilms.es/wp-content/uploads/2021/12/viaje-a-la-luna-historia-del-cine-e1640366097177.jpeg) no-repeat center center / cover;
+    background: url(https://brainstormingfilms.es/wp-content/uploads/2021/12/viaje-a-la-luna-historia-del-cine-e1640366097177.jpeg)
+        no-repeat center center / cover;
 } /* Estilos para la imagen central */
 
 .main-hist .content-hist .viaje {
-    font-family: 'Poppins Italic';
+    font-family: "Poppins Italic";
     margin-top: 0.1rem;
-    font-size: 13px;    
+    font-size: 13px;
 } /* Estilo del pie de foto */
 
 blockquote {
@@ -417,13 +401,6 @@ blockquote {
     margin: 0 0.5rem;
 } /* Estilos para los enlaces del tag */
 
-
-
-
-
-
-
-
 /* ---------------------- Noticias ---------------------- */
 
 /* Contenedor general de las noticias */
@@ -437,8 +414,6 @@ blockquote {
     margin-top: 3rem;
 } /* Contenedor del cuerpo donde van a ir las noticias */
 
-
-
 /* Contenedor de los titulos de las noticias */
 
 .heading-not {
@@ -450,17 +425,15 @@ blockquote {
 } /* Contenedor de los titulos */
 
 .heading-not span {
-    font-family: 'Poppins Thin', sans-serif;
+    font-family: "Poppins Thin", sans-serif;
     color: var(--color-text);
 } /* Estilos del primer titulo */
 
 .heading-not h3 {
-    font-family: 'Peach Cake', sans-serif;
+    font-family: "Peach Cake", sans-serif;
     font-size: 6vh;
     color: var(--color-text);
 } /* Estilos del segundo titulo y principal */
-
-
 
 /* Contenedor de las tarjetas de noticias */
 
@@ -501,7 +474,7 @@ blockquote {
 } /* Estilos del contenedor del texto (fecha y genero de la noticia) */
 
 .text-not span {
-    font-family: 'Poppins Thin', sans-serif;
+    font-family: "Poppins Thin", sans-serif;
     color: grey;
     font-size: 0.9rem;
 } /* Estilo del texte del contenedor de la noticia */
@@ -534,13 +507,6 @@ blockquote {
     margin: 20px 0px;
 } /* Estilos del cuerpo de la noticia */
 
-
-
-
-
-
-
-
 /* ---------------------- Form ---------------------- */
 
 /* Contenedor general del formulario */
@@ -554,12 +520,10 @@ blockquote {
 } /* Contenedor general de la seccion */
 
 .heading-pel h3 {
-    font-family: 'Peach Cake', sans-serif;
+    font-family: "Peach Cake", sans-serif;
     font-size: 6vh;
     color: var(--color-text);
 } /* Estilo para el título general de la seccion */
-
-
 
 /* Contenedor imagen y formulario */
 
@@ -572,27 +536,28 @@ blockquote {
     margin: 20px;
 }
 
-
-
 /* Contenedor imagen */
 
 .container-img-pel {
     position: relative;
-    background: url('https://i.pinimg.com/564x/2d/5a/53/2d5a533fd5254d3d4320db86d98de2d8.jpg') no-repeat center center / cover;
+    background: url("https://i.pinimg.com/564x/2d/5a/53/2d5a533fd5254d3d4320db86d98de2d8.jpg")
+        no-repeat center center / cover;
     width: 40%;
 } /* Imagen de Roz */
 
 .container-img-pel::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.7)
+    );
 } /* Sombreado a las imagenes originales */
-
-
 
 /* Contenedor formulario */
 
@@ -602,8 +567,8 @@ blockquote {
     width: 60%;
 } /* Contenedor formulario, contiene el h4 y el formulario */
 
-.container-title-pel h4{
-    font-family: 'Poppins Bold', sans-serif;
+.container-title-pel h4 {
+    font-family: "Poppins Bold", sans-serif;
     color: var(--color-text);
     font-size: 2rem;
     text-align: center;
@@ -625,34 +590,46 @@ blockquote {
     margin-bottom: 1.5rem;
 } /* Contenedores de los labels y los imputs */
 
-.container-labelinput-pel-tit, .container-labelinput-pel-dir,
-.container-labelinput-pel-year, .container-labelinput-pel-dur,
-.container-labelinput-pel-gen, .container-labelinput-pel-rank,
+.container-labelinput-pel-tit,
+.container-labelinput-pel-dir,
+.container-labelinput-pel-year,
+.container-labelinput-pel-dur,
+.container-labelinput-pel-gen,
+.container-labelinput-pel-rank,
 .container-labelinput-pel-img {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     padding: 5px;
 } /* Estilos de los label e imputs generales */
 
-.label-tit, .label-dir, .label-year,
-.label-dur, .label-gen, .label-rank, .label-img {
+.label-tit,
+.label-dir,
+.label-year,
+.label-dur,
+.label-gen,
+.label-rank,
+.label-img {
     color: var(--color-text);
     font-size: 1.3em;
     margin-right: 1em;
 } /* Estilos de los labels particulares */
 
-.inp-tit, .inp-dir, .inp-year,
-.inp-dur, .inp-gen, .inp-rank, .inp-img {
-        display: flex;
-        width: 100%;
-        padding: .375rem .75rem;
-        color: var(--color-textsec);
-        border: var(--bs-border-width) solid var(--bs-border-color);
-        border-radius: var(--bs-border-radius);
-        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-        box-shadow: 2px 1px 10px var(--color-shadows);
-
+.inp-tit,
+.inp-dir,
+.inp-year,
+.inp-dur,
+.inp-gen,
+.inp-rank,
+.inp-img {
+    display: flex;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    color: var(--color-textsec);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-shadow: 2px 1px 10px var(--color-shadows);
 } /* Estilo de los inputs particulares */
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -660,8 +637,6 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 } /* Sacar las flechitas en los inputs de los numbers */
-
-
 
 /* Seccion botones */
 
@@ -687,19 +662,16 @@ input[type="number"]::-webkit-outer-spin-button {
     text-transform: capitalize;
 }
 
-
-
 @media (max-width: 1000px) {
-
     .container-pel {
         margin-bottom: 12em;
     }
 
     .container-img-pel {
-        background: url('https://scontent.fros2-2.fna.fbcdn.net/v/t1.18169-9/24882_390012054077_5795267_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=oL4JJiUXgC8AX8MDML_&_nc_ht=scontent.fros2-2.fna&oh=00_AfAdu-dRM7AtWjoLXAkCROCOGvdvpeuMnA7fCSvUWp3r4Q&oe=661324CD') no-repeat center center / cover;
+        background: url("https://scontent.fros2-2.fna.fbcdn.net/v/t1.18169-9/24882_390012054077_5795267_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=oL4JJiUXgC8AX8MDML_&_nc_ht=scontent.fros2-2.fna&oh=00_AfAdu-dRM7AtWjoLXAkCROCOGvdvpeuMnA7fCSvUWp3r4Q&oe=661324CD")
+            no-repeat center center / cover;
         width: 100%;
         height: 30%;
-
     }
 
     .container-title-pel h4 {
@@ -709,8 +681,6 @@ input[type="number"]::-webkit-outer-spin-button {
     .container-titleformbtn-pel {
         width: 100%;
     }
-
-
 
     .container-btn-pel {
         padding: 0;
@@ -725,5 +695,4 @@ input[type="number"]::-webkit-outer-spin-button {
     .container-labelinput-pel {
         display: grid;
     }
-
 }
