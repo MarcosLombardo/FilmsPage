@@ -129,7 +129,7 @@
                                     class="container-labelinput-pel-dir col-md-12"
                                 >
                                     <!-- director -->
-                                    <label for="director" class="label-dir"
+                                    <label for="direc" class="label-dir"
                                         >Director
                                         <span class="text-danger"
                                             >*</span
@@ -139,7 +139,7 @@
                                         type="text"
                                         class="inp-dir"
                                         id="director"
-                                        name="director"
+                                        name="direc"
                                         required
                                     />
                                 </div>
@@ -157,6 +157,8 @@
                                     >
                                     <input
                                         type="number"
+                                        min="1895"
+                                        max="2025"
                                         class="inp-year"
                                         id="year"
                                         name="anio"
@@ -192,7 +194,10 @@
                                         ></label
                                     >
                                     <input
-                                        type="text"
+                                        type="number"
+                                        min="1"
+                                        max="10"
+                                        step="any"
                                         class="inp-rank"
                                         id="rate"
                                         name="ranking"

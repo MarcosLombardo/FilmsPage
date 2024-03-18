@@ -1,5 +1,12 @@
 const app = require("./src/server");
+const conDb = require("./src/config/conDb");
 
-app.listen(3000, () => {
-    console.log("Servidor escuchando en el puerto 3000");
-});
+conDb()
+    .then((res) => {
+        app.listen(3000, () => {
+            console.log("Servidor escuchando en el puerto 3000");
+        });
+    })
+    .catch((err) => {
+        console.log("Error al concectar la BDD");
+    });

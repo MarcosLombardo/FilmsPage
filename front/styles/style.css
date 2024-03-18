@@ -274,7 +274,7 @@ i:hover {
     color: var(--color-popcorn);
 }
 
-/* ---------------------- Historia del cine ---------------------- */
+/* ------------------------------------------------------------------ Historia del cine ------------------------------------------------------------------ */
 
 /* Imagen del cine */
 
@@ -401,7 +401,7 @@ blockquote {
     margin: 0 0.5rem;
 } /* Estilos para los enlaces del tag */
 
-/* ---------------------- Noticias ---------------------- */
+/* ------------------------------------------------------------------ Noticias ------------------------------------------------------------------ */
 
 /* Contenedor general de las noticias */
 
@@ -507,10 +507,9 @@ blockquote {
     margin: 20px 0px;
 } /* Estilos del cuerpo de la noticia */
 
-/* ---------------------- Form ---------------------- */
+/* ------------------------------------------------------------------ Form ------------------------------------------------------------------ */
 
 /* Contenedor general del formulario */
-
 .container-pel {
     display: flex;
     flex-direction: column;
