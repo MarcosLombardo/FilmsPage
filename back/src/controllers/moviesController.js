@@ -11,4 +11,19 @@ module.exports = {
             });
         }
     },
+
+    addAllMovies: async (req, res) => {
+        const { title, year, director, duration, genre, rate, poster } =
+            req.body;
+        const newMovie = await moviesService.addMovies(
+            title,
+            year,
+            director,
+            duration,
+            genre,
+            rate,
+            poster
+        );
+        res.status(201).json(newMovie);
+    },
 };

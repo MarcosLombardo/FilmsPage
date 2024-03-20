@@ -8,5 +8,5 @@ conDb()
         });
     })
     .catch((err) => {
-        console.log("Error al concectar la BDD");
+        console.log("Error al concectar la BDD", err.message);
     });
