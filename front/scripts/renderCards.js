@@ -27,7 +27,7 @@ function renderFilms(movie) {
                                 )}</span></p>
                                 </div> `;
 
-    filmSection.appendChild(containerMovie);
+    filmSection?.appendChild(containerMovie);
 }
 
 module.exports = renderFilms;
