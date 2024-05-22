@@ -75,10 +75,6 @@ To run this project on your local machine, follow these steps:
    ```bash
    Go to http://localhost:3000 to see the application in action.
 
-## Screenshots
-
-Include screenshots of the different sections of your site here.
-
 ## Author
 
 Created by **Marcos Pedro Lombardo**. If you have any questions, feel free to contact me.
