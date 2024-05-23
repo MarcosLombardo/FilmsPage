@@ -1,15 +1,15 @@
 # Pop-Corn 
 
-## Description
+## Descripción
 
-This project is a film website that uses a variety of modern technologies to offer an interactive and dynamic experience. The site consists of four main sections:
+Este proyecto es un sitio web de cine que utiliza diversas tecnologías modernas para ofrecer una experiencia interactiva y dinámica. El sitio consta de cuatro secciones principales:
 
-1. **Home:** Renders the films brought in from the database.
-2. **History of Cinema:** Information on the evolution and history of cinema.
-3. **News:** Latest news related to cinema.
-4. **Form:** It allows users to add new films to the database, which are then rendered in the film section.
+1. **Home:** Renderiza las películas traídas de la base de datos.
+2. **Historia del Cine:** Información sobre la evolución y la historia del cine.
+3. **Noticias:** Últimas noticias relacionadas con el mundo del cine.
+4. **Formulario:** Permite a los usuarios añadir nuevas películas a la base de datos, que se muestran en la sección de películas.
 
-## Technologies Used
+## Tecnologías utilizadas
 
 - **HTML**
 - **CSS**
@@ -20,61 +20,61 @@ This project is a film website that uses a variety of modern technologies to off
 - **AJAX**
 - **MongoDB**
 
-## Functionalities
+## Funcionalidades
 
-### Films Section in home
+### Sección de películas a domicilio
 
-- Renders a list of movies retrieved from the MongoDB database.
-- Each film shows relevant information such as title, director, year of release, etc..
+- Renderiza una lista de películas recuperadas de la base de datos MongoDB.
+- Cada película muestra información relevante como título, director, año de estreno, etc..
 
-### Film History Section
+### Sección de Historia del Cine
 
-- It provides an overview of the history of cinema.
-- It includes information on milestones and developments in the film industry.
+- Ofrece una visión general de la historia del cine.
+- Incluye información sobre los hitos y la evolución de la industria cinematográfica.
 
-### News Section
+### Sección de noticias
 
-- Shows the latest news and updates from the world of cinema.
-- News can be dynamically updated.
+- Muestra las últimas noticias y novedades del mundo del cine.
+- Las noticias pueden actualizarse dinámicamente.
 
-### Form Section
+### Sección del formulario
 
-- Allows users to complete a form to add new movies.
-- The form data is sent to the MongoDB database.
-- Once a movie is added, it is automatically rendered in the movies section.
+- Permite a los usuarios rellenar un formulario para añadir nuevas películas.
+- Los datos del formulario se envían a la base de datos MongoDB.
+- Una vez añadida una película, se muestra automáticamente en la sección de películas.
 
-## Installation
+## Instalación
 
-To run this project on your local machine, follow these steps:
+Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
-1. **Clone the repository:**
+1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/TuUsuario/FilmsPage.git
 
-2. **Navigate to the project directory:**
+2. **Navegue hasta el directorio del proyecto:**
    ```bash
    cd FilmsPage
 
-3. **Install the dependencies:**
+3. **Instalar las dependencias:**
    ```bash
    npm install
 
-4. **Configure the database:**
-  - Make sure you have MongoDB installed and running.
-  - Create an .env file in the root of the project with the connection to your MongoDB database.
+4. **Configurar la base de datos:**
+  - Asegúrate de que tienes MongoDB instalado y funcionando.
+  - Crea un archivo .env en la raíz del proyecto con la conexión a tu base de datos MongoDB.
     
   ```bash
   MONGODB_URI=mongodb://localhost:27017/nombre-de-tu-bd
   ```
 
-5. **Start the server:**
+5. **Iniciar el servidor:**
    ```bash
    npm start
 
-6. **Open the project in your browser:**
+6. **Abra el proyecto en su navegador:**
    ```bash
-   Go to http://localhost:3000 to see the application in action.
+   Visite 'http://localhost:3000' para ver la aplicación en acción.
 
-## Author
+## Autor
 
-Created by **Marcos Pedro Lombardo**. If you have any questions, feel free to contact me.
+Creado por **Marcos Pedro Lombardo**. Si tiene alguna pregunta, no dude en ponerse en contacto conmigo.
